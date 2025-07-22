@@ -54,30 +54,30 @@ echo "[0]EXIT"
 echo ""
 read -p "ENTER YOUR CHOICE :" as
 
+# Function to open URL cross-platform
+open_url() {
+  local url=$1
+  if command -v termux-open-url >/dev/null 2>&1; then
+    termux-open-url "$url"
+  else
+    xdg-open "$url"
+  fi
+}
+
+# Handle menu
 if [[ $as == 1 ]]; then
-  termux-open-url
-"https://t.me/d3c0d3d191"
-else
-  xdg-open
-"https://t.me/d3c0d3d191"
-fi
+  open_url "https://t.me/d3c0d3d191"
+
 elif [[ $as == 2 ]]; then
-  termux-open-url
-  "https://t.me/d3c0d3d191"
-  else
-  xdg-open
-"https://t.me/d3c0d3d191"
-fi
+  open_url "https://t.me/d3c0d3d191"
+
 elif [[ $as == 3 ]]; then
-  termux-open-url
-  "https://t.me/surajswithattitude"
-  else
-  xdg-open
-"https://t.me/surajswithattitude"
-fi
+  open_url "https://t.me/surajswithattitude"
+
 elif [[ $as == 0 ]]; then
   echo "Goodbye!"
   exit
+
 else
-  echo "invalid choice"
+  echo "Invalid choice!"
 fi
