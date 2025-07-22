@@ -22,8 +22,8 @@ apt update && apt upgrade
 pkg install git bash nano
 git clone https://github.com/Surajdas007272/Decoded.git
 cd Decoded
-chmod +x decoded.sh
-./decoded.sh
+chmod +x blackhat.sh
+./blackhat.sh
 ```
 ### UBUNTU & kali linux
 
@@ -31,6 +31,6 @@ chmod +x decoded.sh
 sudo apt update && sudo apt install git bash nano
 git clone https://github.com/Surajdas007272/Decoded.git
 cd Decoded
-chmod +x decoded.sh
-./decoded.sh
+chmod +x blackhat.sh
+./blackhat.sh
 ```
