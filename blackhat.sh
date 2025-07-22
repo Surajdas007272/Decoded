@@ -52,7 +52,7 @@ echo "[2] HACKING APKS"
 echo "[3] CHAT WITH ADMIN"
 echo "[0]EXIT"
 echo ""
-echo -p "ENTER YOUR CHOICE :" as
+read -p "ENTER YOUR CHOICE :" as
 
 if [[ $as == 1 ]]; then
   xdg-open
