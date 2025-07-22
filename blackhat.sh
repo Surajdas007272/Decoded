@@ -81,4 +81,3 @@ elif [[ $as == 0 ]]; then
 else
   echo "invalid choice"
 fi
-cd
