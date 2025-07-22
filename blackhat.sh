@@ -55,17 +55,30 @@ echo ""
 read -p "ENTER YOUR CHOICE :" as
 
 if [[ $as == 1 ]]; then
+  termux-open-url
+"https://t.me/d3c0d3d191"
+else
   xdg-open
 "https://t.me/d3c0d3d191"
+fi
 elif [[ $as == 2 ]]; then
+  termux-open-url
+  "https://t.me/d3c0d3d191"
+  else
   xdg-open
 "https://t.me/d3c0d3d191"
+fi
 elif [[ $as == 3 ]]; then
+  termux-open-url
+  "https://t.me/surajswithattitude"
+  else
   xdg-open
 "https://t.me/surajswithattitude"
+fi
 elif [[ $as == 0 ]]; then
   echo "Goodbye!"
   exit
 else
   echo "invalid choice"
 fi
+cd
