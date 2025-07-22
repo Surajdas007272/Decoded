@@ -66,12 +66,15 @@ open_url() {
 
 # Handle menu
 if [[ $as == 1 ]]; then
+  echo " Loading..."
   open_url "https://t.me/d3c0d3d191"
 
 elif [[ $as == 2 ]]; then
+  echo " Loading..."
   open_url "https://t.me/d3c0d3d191"
 
 elif [[ $as == 3 ]]; then
+  echo " Loading..."
   open_url "https://t.me/surajswithattitude"
 
 elif [[ $as == 0 ]]; then
@@ -81,3 +84,5 @@ elif [[ $as == 0 ]]; then
 else
   echo "Invalid choice!"
 fi
+
+cd
