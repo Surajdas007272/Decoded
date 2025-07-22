@@ -18,19 +18,18 @@ ASCII-style interface with useful learning & utility tools.
 
 ### Termux (Android)
 ```bash
-apt update && apt upgrade
-pkg install git bash nano
-git clone https://github.com/Surajdas007272/Decoded.git
+git clone https://github.com/Surajdas007272/Decoded
 cd Decoded
-chmod +x blackhat.sh
-./blackhat.sh
+pkg install dos2unix -y || sudo apt install dos2unix -y
+dos2unix blackhat.sh
+bash blackhat.sh
 ```
 ### UBUNTU & kali linux
 
 ```bash
-sudo apt update && sudo apt install git bash nano
-git clone https://github.com/Surajdas007272/Decoded.git
+sudo apt update && sudo apt install git dos2unix -y
+git clone https://github.com/Surajdas007272/Decoded
 cd Decoded
-chmod +x blackhat.sh
-./blackhat.sh
+dos2unix blackhat.sh
+bash blackhat.sh
 ```
